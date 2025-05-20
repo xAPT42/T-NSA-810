@@ -1,0 +1,213 @@
+nmap -sV --script vuln -p- -oN vuln_142.txt 192.168.145.142
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-05-20 02:40 CEST
+Nmap scan report for 192.168.145.142
+Host is up (0.00063s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 7.4 (protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.4: 
+|       CVE-2023-38408  9.8     https://vulners.com/cve/CVE-2023-38408
+|       B8190CDB-3EB9-5631-9828-8064A1575B23    9.8     https://vulners.com/githubexploit/B8190CDB-3EB9-5631-9828-8064A1575B23     *EXPLOIT*
+|       8FC9C5AB-3968-5F3C-825E-E8DB5379A623    9.8     https://vulners.com/githubexploit/8FC9C5AB-3968-5F3C-825E-E8DB5379A623     *EXPLOIT*
+|       8AD01159-548E-546E-AA87-2DE89F3927EC    9.8     https://vulners.com/githubexploit/8AD01159-548E-546E-AA87-2DE89F3927EC     *EXPLOIT*
+|       5E6968B4-DBD6-57FA-BF6E-D9B2219DB27A    9.8     https://vulners.com/githubexploit/5E6968B4-DBD6-57FA-BF6E-D9B2219DB27A     *EXPLOIT*
+|       2227729D-6700-5C8F-8930-1EEAFD4B9FF0    9.8     https://vulners.com/githubexploit/2227729D-6700-5C8F-8930-1EEAFD4B9FF0     *EXPLOIT*
+|       0221525F-07F5-5790-912D-F4B9E2D1B587    9.8     https://vulners.com/githubexploit/0221525F-07F5-5790-912D-F4B9E2D1B587     *EXPLOIT*
+|       CVE-2020-15778  7.8     https://vulners.com/cve/CVE-2020-15778
+|       SSV:92579       7.5     https://vulners.com/seebug/SSV:92579    *EXPLOIT*
+|       PACKETSTORM:173661      7.5     https://vulners.com/packetstorm/PACKETSTORM:173661      *EXPLOIT*
+|       F0979183-AE88-53B4-86CF-3AF0523F3807    7.5     https://vulners.com/githubexploit/F0979183-AE88-53B4-86CF-3AF0523F3807     *EXPLOIT*
+|       1337DAY-ID-26576        7.5     https://vulners.com/zdt/1337DAY-ID-26576        *EXPLOIT*
+|       CVE-2021-41617  7.0     https://vulners.com/cve/CVE-2021-41617
+|       95499236-C9FE-56A6-9D7D-E943A24B633A    6.9     https://vulners.com/githubexploit/95499236-C9FE-56A6-9D7D-E943A24B633A     *EXPLOIT*
+|       2C119FFA-ECE0-5E14-A4A4-354A2C38071A    6.9     https://vulners.com/githubexploit/2C119FFA-ECE0-5E14-A4A4-354A2C38071A     *EXPLOIT*
+|       PACKETSTORM:189283      6.8     https://vulners.com/packetstorm/PACKETSTORM:189283      *EXPLOIT*
+|       F79E574D-30C8-5C52-A801-66FFA0610BAA    6.8     https://vulners.com/githubexploit/F79E574D-30C8-5C52-A801-66FFA0610BAA     *EXPLOIT*
+|       EDB-ID:46516    6.8     https://vulners.com/exploitdb/EDB-ID:46516      *EXPLOIT*
+|       EDB-ID:46193    6.8     https://vulners.com/exploitdb/EDB-ID:46193      *EXPLOIT*
+|       CVE-2025-26465  6.8     https://vulners.com/cve/CVE-2025-26465
+|       CVE-2019-6110   6.8     https://vulners.com/cve/CVE-2019-6110
+|       CVE-2019-6109   6.8     https://vulners.com/cve/CVE-2019-6109
+|       C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3    6.8     https://vulners.com/githubexploit/C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3     *EXPLOIT*
+|       1337DAY-ID-39918        6.8     https://vulners.com/zdt/1337DAY-ID-39918        *EXPLOIT*
+|       10213DBE-F683-58BB-B6D3-353173626207    6.8     https://vulners.com/githubexploit/10213DBE-F683-58BB-B6D3-353173626207     *EXPLOIT*
+|       CVE-2023-51385  6.5     https://vulners.com/cve/CVE-2023-51385
+|       PACKETSTORM:181223      5.9     https://vulners.com/packetstorm/PACKETSTORM:181223      *EXPLOIT*
+|       MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-        5.9     https://vulners.com/metasploit/MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-    *EXPLOIT*
+|       CVE-2023-48795  5.9     https://vulners.com/cve/CVE-2023-48795
+|       CVE-2020-14145  5.9     https://vulners.com/cve/CVE-2020-14145
+|       CVE-2019-6111   5.9     https://vulners.com/cve/CVE-2019-6111
+|       54E1BB01-2C69-5AFD-A23D-9783C9D9FC4C    5.9     https://vulners.com/githubexploit/54E1BB01-2C69-5AFD-A23D-9783C9D9FC4C     *EXPLOIT*
+|       EXPLOITPACK:98FE96309F9524B8C84C508837551A19    5.8     https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19       *EXPLOIT*
+|       EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97    5.8     https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97       *EXPLOIT*
+|       1337DAY-ID-32328        5.8     https://vulners.com/zdt/1337DAY-ID-32328        *EXPLOIT*
+|       1337DAY-ID-32009        5.8     https://vulners.com/zdt/1337DAY-ID-32009        *EXPLOIT*
+|       EDB-ID:45939    5.3     https://vulners.com/exploitdb/EDB-ID:45939      *EXPLOIT*
+|       EDB-ID:45233    5.3     https://vulners.com/exploitdb/EDB-ID:45233      *EXPLOIT*
+|       CVE-2018-20685  5.3     https://vulners.com/cve/CVE-2018-20685
+|       CVE-2018-15919  5.3     https://vulners.com/cve/CVE-2018-15919
+|       CVE-2018-15473  5.3     https://vulners.com/cve/CVE-2018-15473
+|       CVE-2017-15906  5.3     https://vulners.com/cve/CVE-2017-15906
+|       CVE-2016-20012  5.3     https://vulners.com/cve/CVE-2016-20012
+|       SSH_ENUM        5.0     https://vulners.com/canvas/SSH_ENUM     *EXPLOIT*
+|       PACKETSTORM:150621      5.0     https://vulners.com/packetstorm/PACKETSTORM:150621      *EXPLOIT*
+|       EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0    5.0     https://vulners.com/exploitpack/EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0       *EXPLOIT*
+|       EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283    5.0     https://vulners.com/exploitpack/EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283       *EXPLOIT*
+|       1337DAY-ID-31730        5.0     https://vulners.com/zdt/1337DAY-ID-31730        *EXPLOIT*
+|       CVE-2025-32728  4.3     https://vulners.com/cve/CVE-2025-32728
+|       CVE-2021-36368  3.7     https://vulners.com/cve/CVE-2021-36368
+|       PACKETSTORM:151227      0.0     https://vulners.com/packetstorm/PACKETSTORM:151227      *EXPLOIT*
+|       PACKETSTORM:140261      0.0     https://vulners.com/packetstorm/PACKETSTORM:140261      *EXPLOIT*
+|_      1337DAY-ID-30937        0.0     https://vulners.com/zdt/1337DAY-ID-30937        *EXPLOIT*
+80/tcp  open  http    Golang net/http server
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.145.142
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.145.142:80/explore/repos
+|     Form id: 
+|_    Form action: 
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Content-Type: text/html; charset=UTF-8
+|     Set-Cookie: lang=en-US; Path=/; Max-Age=2147483647
+|     Set-Cookie: i_like_gitea=3711a3cde73ca8b6; Path=/; HttpOnly
+|     Set-Cookie: _csrf=prRAZOzNQSWv7m1NADpQ4erzKw46MTc0NzcwODg2MjU5OTYwNDUxNQ%3D%3D; Path=/; Expires=Wed, 21 May 2025 02:41:02 GMT; HttpOnly
+|     X-Frame-Options: SAMEORIGIN
+|     Date: Tue, 20 May 2025 02:41:02 GMT
+|     <!DOCTYPE html>
+|     <html>
+|     <head data-suburl="">
+|     <meta charset="utf-8">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <meta http-equiv="x-ua-compatible" content="ie=edge">
+|     <title>Gitea: Git with a cup of tea</title>
+|     <meta name="theme-color" content="#6cc644">
+|     <meta name="author" content="Gitea - Git with a cup of tea" />
+|     <meta name="description" content="Gitea (Git with a cup of tea) is a painless self-hosted Git service written in Go" />
+|     <meta name="keywords" content="go,git,self-hosted,gitea
+|   HTTPOptions: 
+|     HTTP/1.0 404 Not Found
+|     Content-Type: text/html; charset=UTF-8
+|     Set-Cookie: lang=en-US; Path=/; Max-Age=2147483647
+|     Set-Cookie: i_like_gitea=73b58ad844bfe427; Path=/; HttpOnly
+|     Set-Cookie: _csrf=ZW8gBSvLA8ORB4zftssb2auUbyc6MTc0NzcwODg2MzA5NzY3NzgzMQ%3D%3D; Path=/; Expires=Wed, 21 May 2025 02:41:03 GMT; HttpOnly
+|     X-Frame-Options: SAMEORIGIN
+|     Date: Tue, 20 May 2025 02:41:03 GMT
+|     <!DOCTYPE html>
+|     <html>
+|     <head data-suburl="">
+|     <meta charset="utf-8">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <meta http-equiv="x-ua-compatible" content="ie=edge">
+|     <title>Page Not Found - Gitea: Git with a cup of tea</title>
+|     <meta name="theme-color" content="#6cc644">
+|     <meta name="author" content="Gitea - Git with a cup of tea" />
+|     <meta name="description" content="Gitea (Git with a cup of tea) is a painless self-hosted Git service written in Go" />
+|_    <meta name="keywords" content="
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-enum: 
+|   /healthcheck/: Spring Boot Actuator endpoint
+|_  /debug/: Potentially interesting folder
+222/tcp open  ssh     OpenSSH 7.5 (protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.5: 
+|       CVE-2023-38408  9.8     https://vulners.com/cve/CVE-2023-38408
+|       B8190CDB-3EB9-5631-9828-8064A1575B23    9.8     https://vulners.com/githubexploit/B8190CDB-3EB9-5631-9828-8064A1575B23     *EXPLOIT*
+|       8FC9C5AB-3968-5F3C-825E-E8DB5379A623    9.8     https://vulners.com/githubexploit/8FC9C5AB-3968-5F3C-825E-E8DB5379A623     *EXPLOIT*
+|       8AD01159-548E-546E-AA87-2DE89F3927EC    9.8     https://vulners.com/githubexploit/8AD01159-548E-546E-AA87-2DE89F3927EC     *EXPLOIT*
+|       5E6968B4-DBD6-57FA-BF6E-D9B2219DB27A    9.8     https://vulners.com/githubexploit/5E6968B4-DBD6-57FA-BF6E-D9B2219DB27A     *EXPLOIT*
+|       2227729D-6700-5C8F-8930-1EEAFD4B9FF0    9.8     https://vulners.com/githubexploit/2227729D-6700-5C8F-8930-1EEAFD4B9FF0     *EXPLOIT*
+|       0221525F-07F5-5790-912D-F4B9E2D1B587    9.8     https://vulners.com/githubexploit/0221525F-07F5-5790-912D-F4B9E2D1B587     *EXPLOIT*
+|       CVE-2020-15778  7.8     https://vulners.com/cve/CVE-2020-15778
+|       SSV:92579       7.5     https://vulners.com/seebug/SSV:92579    *EXPLOIT*
+|       PACKETSTORM:173661      7.5     https://vulners.com/packetstorm/PACKETSTORM:173661      *EXPLOIT*
+|       F0979183-AE88-53B4-86CF-3AF0523F3807    7.5     https://vulners.com/githubexploit/F0979183-AE88-53B4-86CF-3AF0523F3807     *EXPLOIT*
+|       1337DAY-ID-26576        7.5     https://vulners.com/zdt/1337DAY-ID-26576        *EXPLOIT*
+|       CVE-2021-41617  7.0     https://vulners.com/cve/CVE-2021-41617
+|       95499236-C9FE-56A6-9D7D-E943A24B633A    6.9     https://vulners.com/githubexploit/95499236-C9FE-56A6-9D7D-E943A24B633A     *EXPLOIT*
+|       2C119FFA-ECE0-5E14-A4A4-354A2C38071A    6.9     https://vulners.com/githubexploit/2C119FFA-ECE0-5E14-A4A4-354A2C38071A     *EXPLOIT*
+|       PACKETSTORM:189283      6.8     https://vulners.com/packetstorm/PACKETSTORM:189283      *EXPLOIT*
+|       F79E574D-30C8-5C52-A801-66FFA0610BAA    6.8     https://vulners.com/githubexploit/F79E574D-30C8-5C52-A801-66FFA0610BAA     *EXPLOIT*
+|       EDB-ID:46516    6.8     https://vulners.com/exploitdb/EDB-ID:46516      *EXPLOIT*
+|       EDB-ID:46193    6.8     https://vulners.com/exploitdb/EDB-ID:46193      *EXPLOIT*
+|       CVE-2025-26465  6.8     https://vulners.com/cve/CVE-2025-26465
+|       CVE-2019-6110   6.8     https://vulners.com/cve/CVE-2019-6110
+|       CVE-2019-6109   6.8     https://vulners.com/cve/CVE-2019-6109
+|       C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3    6.8     https://vulners.com/githubexploit/C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3     *EXPLOIT*
+|       1337DAY-ID-39918        6.8     https://vulners.com/zdt/1337DAY-ID-39918        *EXPLOIT*
+|       10213DBE-F683-58BB-B6D3-353173626207    6.8     https://vulners.com/githubexploit/10213DBE-F683-58BB-B6D3-353173626207     *EXPLOIT*
+|       CVE-2023-51385  6.5     https://vulners.com/cve/CVE-2023-51385
+|       PACKETSTORM:181223      5.9     https://vulners.com/packetstorm/PACKETSTORM:181223      *EXPLOIT*
+|       MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-        5.9     https://vulners.com/metasploit/MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-    *EXPLOIT*
+|       CVE-2023-48795  5.9     https://vulners.com/cve/CVE-2023-48795
+|       CVE-2020-14145  5.9     https://vulners.com/cve/CVE-2020-14145
+|       CVE-2019-6111   5.9     https://vulners.com/cve/CVE-2019-6111
+|       54E1BB01-2C69-5AFD-A23D-9783C9D9FC4C    5.9     https://vulners.com/githubexploit/54E1BB01-2C69-5AFD-A23D-9783C9D9FC4C     *EXPLOIT*
+|       EXPLOITPACK:98FE96309F9524B8C84C508837551A19    5.8     https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19       *EXPLOIT*
+|       EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97    5.8     https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97       *EXPLOIT*
+|       1337DAY-ID-32328        5.8     https://vulners.com/zdt/1337DAY-ID-32328        *EXPLOIT*
+|       1337DAY-ID-32009        5.8     https://vulners.com/zdt/1337DAY-ID-32009        *EXPLOIT*
+|       EDB-ID:45939    5.3     https://vulners.com/exploitdb/EDB-ID:45939      *EXPLOIT*
+|       EDB-ID:45233    5.3     https://vulners.com/exploitdb/EDB-ID:45233      *EXPLOIT*
+|       CVE-2018-20685  5.3     https://vulners.com/cve/CVE-2018-20685
+|       CVE-2018-15919  5.3     https://vulners.com/cve/CVE-2018-15919
+|       CVE-2018-15473  5.3     https://vulners.com/cve/CVE-2018-15473
+|       CVE-2017-15906  5.3     https://vulners.com/cve/CVE-2017-15906
+|       CVE-2016-20012  5.3     https://vulners.com/cve/CVE-2016-20012
+|       SSH_ENUM        5.0     https://vulners.com/canvas/SSH_ENUM     *EXPLOIT*
+|       PACKETSTORM:150621      5.0     https://vulners.com/packetstorm/PACKETSTORM:150621      *EXPLOIT*
+|       EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0    5.0     https://vulners.com/exploitpack/EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0       *EXPLOIT*
+|       EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283    5.0     https://vulners.com/exploitpack/EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283       *EXPLOIT*
+|       1337DAY-ID-31730        5.0     https://vulners.com/zdt/1337DAY-ID-31730        *EXPLOIT*
+|       CVE-2025-32728  4.3     https://vulners.com/cve/CVE-2025-32728
+|       CVE-2021-36368  3.7     https://vulners.com/cve/CVE-2021-36368
+|       PACKETSTORM:151227      0.0     https://vulners.com/packetstorm/PACKETSTORM:151227      *EXPLOIT*
+|       PACKETSTORM:140261      0.0     https://vulners.com/packetstorm/PACKETSTORM:140261      *EXPLOIT*
+|_      1337DAY-ID-30937        0.0     https://vulners.com/zdt/1337DAY-ID-30937        *EXPLOIT*
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.95%I=7%D=5/20%Time=682BCFA0%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,2696,"HTTP/1\.0\x20200\x20OK\r\nContent-Type:\x20text/html;\x20c
+SF:harset=UTF-8\r\nSet-Cookie:\x20lang=en-US;\x20Path=/;\x20Max-Age=214748
+SF:3647\r\nSet-Cookie:\x20i_like_gitea=3711a3cde73ca8b6;\x20Path=/;\x20Htt
+SF:pOnly\r\nSet-Cookie:\x20_csrf=prRAZOzNQSWv7m1NADpQ4erzKw46MTc0NzcwODg2M
+SF:jU5OTYwNDUxNQ%3D%3D;\x20Path=/;\x20Expires=Wed,\x2021\x20May\x202025\x2
+SF:002:41:02\x20GMT;\x20HttpOnly\r\nX-Frame-Options:\x20SAMEORIGIN\r\nDate
+SF::\x20Tue,\x2020\x20May\x202025\x2002:41:02\x20GMT\r\n\r\n<!DOCTYPE\x20h
+SF:tml>\n<html>\n<head\x20data-suburl=\"\">\n\t<meta\x20charset=\"utf-8\">
+SF:\n\t<meta\x20name=\"viewport\"\x20content=\"width=device-width,\x20init
+SF:ial-scale=1\">\n\t<meta\x20http-equiv=\"x-ua-compatible\"\x20content=\"
+SF:ie=edge\">\n\t<title>Gitea:\x20Git\x20with\x20a\x20cup\x20of\x20tea</ti
+SF:tle>\n\t<meta\x20name=\"theme-color\"\x20content=\"#6cc644\">\n\t<meta\
+SF:x20name=\"author\"\x20content=\"Gitea\x20-\x20Git\x20with\x20a\x20cup\x
+SF:20of\x20tea\"\x20/>\n\t<meta\x20name=\"description\"\x20content=\"Gitea
+SF:\x20\(Git\x20with\x20a\x20cup\x20of\x20tea\)\x20is\x20a\x20painless\x20
+SF:self-hosted\x20Git\x20service\x20written\x20in\x20Go\"\x20/>\n\t<meta\x
+SF:20name=\"keywords\"\x20content=\"go,git,self-hosted,gitea")%r(HTTPOptio
+SF:ns,1F02,"HTTP/1\.0\x20404\x20Not\x20Found\r\nContent-Type:\x20text/html
+SF:;\x20charset=UTF-8\r\nSet-Cookie:\x20lang=en-US;\x20Path=/;\x20Max-Age=
+SF:2147483647\r\nSet-Cookie:\x20i_like_gitea=73b58ad844bfe427;\x20Path=/;\
+SF:x20HttpOnly\r\nSet-Cookie:\x20_csrf=ZW8gBSvLA8ORB4zftssb2auUbyc6MTc0Nzc
+SF:wODg2MzA5NzY3NzgzMQ%3D%3D;\x20Path=/;\x20Expires=Wed,\x2021\x20May\x202
+SF:025\x2002:41:03\x20GMT;\x20HttpOnly\r\nX-Frame-Options:\x20SAMEORIGIN\r
+SF:\nDate:\x20Tue,\x2020\x20May\x202025\x2002:41:03\x20GMT\r\n\r\n<!DOCTYP
+SF:E\x20html>\n<html>\n<head\x20data-suburl=\"\">\n\t<meta\x20charset=\"ut
+SF:f-8\">\n\t<meta\x20name=\"viewport\"\x20content=\"width=device-width,\x
+SF:20initial-scale=1\">\n\t<meta\x20http-equiv=\"x-ua-compatible\"\x20cont
+SF:ent=\"ie=edge\">\n\t<title>Page\x20Not\x20Found\x20-\x20Gitea:\x20Git\x
+SF:20with\x20a\x20cup\x20of\x20tea</title>\n\t<meta\x20name=\"theme-color\
+SF:"\x20content=\"#6cc644\">\n\t<meta\x20name=\"author\"\x20content=\"Gite
+SF:a\x20-\x20Git\x20with\x20a\x20cup\x20of\x20tea\"\x20/>\n\t<meta\x20name
+SF:=\"description\"\x20content=\"Gitea\x20\(Git\x20with\x20a\x20cup\x20of\
+SF:x20tea\)\x20is\x20a\x20painless\x20self-hosted\x20Git\x20service\x20wri
+SF:tten\x20in\x20Go\"\x20/>\n\t<meta\x20name=\"keywords\"\x20content=\"");
+MAC Address: 00:0C:29:3A:91:FD (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 578.43 seconds
+                                                                                                                   
+┌──(roadmvn㉿kali)-[~]
+└─$ 
