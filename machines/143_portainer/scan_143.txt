@@ -1,0 +1,182 @@
+┌──(roadmvn㉿kali)-[~]
+└─$ nmap -sV --script vuln -p- -oN vuln_143.txt 192.168.145.143
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-05-20 02:40 CEST
+Nmap scan report for 192.168.145.143
+Host is up (0.00096s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 7.4 (protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.4: 
+|       CVE-2023-38408  9.8     https://vulners.com/cve/CVE-2023-38408
+|       B8190CDB-3EB9-5631-9828-8064A1575B23    9.8     https://vulners.com/githubexploit/B8190CDB-3EB9-5631-9828-8064A1575B23     *EXPLOIT*
+|       8FC9C5AB-3968-5F3C-825E-E8DB5379A623    9.8     https://vulners.com/githubexploit/8FC9C5AB-3968-5F3C-825E-E8DB5379A623     *EXPLOIT*
+|       8AD01159-548E-546E-AA87-2DE89F3927EC    9.8     https://vulners.com/githubexploit/8AD01159-548E-546E-AA87-2DE89F3927EC     *EXPLOIT*
+|       5E6968B4-DBD6-57FA-BF6E-D9B2219DB27A    9.8     https://vulners.com/githubexploit/5E6968B4-DBD6-57FA-BF6E-D9B2219DB27A     *EXPLOIT*
+|       2227729D-6700-5C8F-8930-1EEAFD4B9FF0    9.8     https://vulners.com/githubexploit/2227729D-6700-5C8F-8930-1EEAFD4B9FF0     *EXPLOIT*
+|       0221525F-07F5-5790-912D-F4B9E2D1B587    9.8     https://vulners.com/githubexploit/0221525F-07F5-5790-912D-F4B9E2D1B587     *EXPLOIT*
+|       CVE-2020-15778  7.8     https://vulners.com/cve/CVE-2020-15778
+|       SSV:92579       7.5     https://vulners.com/seebug/SSV:92579    *EXPLOIT*
+|       PACKETSTORM:173661      7.5     https://vulners.com/packetstorm/PACKETSTORM:173661      *EXPLOIT*
+|       F0979183-AE88-53B4-86CF-3AF0523F3807    7.5     https://vulners.com/githubexploit/F0979183-AE88-53B4-86CF-3AF0523F3807     *EXPLOIT*
+|       1337DAY-ID-26576        7.5     https://vulners.com/zdt/1337DAY-ID-26576        *EXPLOIT*
+|       CVE-2021-41617  7.0     https://vulners.com/cve/CVE-2021-41617
+|       95499236-C9FE-56A6-9D7D-E943A24B633A    6.9     https://vulners.com/githubexploit/95499236-C9FE-56A6-9D7D-E943A24B633A     *EXPLOIT*
+|       2C119FFA-ECE0-5E14-A4A4-354A2C38071A    6.9     https://vulners.com/githubexploit/2C119FFA-ECE0-5E14-A4A4-354A2C38071A     *EXPLOIT*
+|       PACKETSTORM:189283      6.8     https://vulners.com/packetstorm/PACKETSTORM:189283      *EXPLOIT*
+|       F79E574D-30C8-5C52-A801-66FFA0610BAA    6.8     https://vulners.com/githubexploit/F79E574D-30C8-5C52-A801-66FFA0610BAA     *EXPLOIT*
+|       EDB-ID:46516    6.8     https://vulners.com/exploitdb/EDB-ID:46516      *EXPLOIT*
+|       EDB-ID:46193    6.8     https://vulners.com/exploitdb/EDB-ID:46193      *EXPLOIT*
+|       CVE-2025-26465  6.8     https://vulners.com/cve/CVE-2025-26465
+|       CVE-2019-6110   6.8     https://vulners.com/cve/CVE-2019-6110
+|       CVE-2019-6109   6.8     https://vulners.com/cve/CVE-2019-6109
+|       C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3    6.8     https://vulners.com/githubexploit/C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3     *EXPLOIT*
+|       1337DAY-ID-39918        6.8     https://vulners.com/zdt/1337DAY-ID-39918        *EXPLOIT*
+|       10213DBE-F683-58BB-B6D3-353173626207    6.8     https://vulners.com/githubexploit/10213DBE-F683-58BB-B6D3-353173626207     *EXPLOIT*
+|       CVE-2023-51385  6.5     https://vulners.com/cve/CVE-2023-51385
+|       PACKETSTORM:181223      5.9     https://vulners.com/packetstorm/PACKETSTORM:181223      *EXPLOIT*
+|       MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-        5.9     https://vulners.com/metasploit/MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-    *EXPLOIT*
+|       CVE-2023-48795  5.9     https://vulners.com/cve/CVE-2023-48795
+|       CVE-2020-14145  5.9     https://vulners.com/cve/CVE-2020-14145
+|       CVE-2019-6111   5.9     https://vulners.com/cve/CVE-2019-6111
+|       54E1BB01-2C69-5AFD-A23D-9783C9D9FC4C    5.9     https://vulners.com/githubexploit/54E1BB01-2C69-5AFD-A23D-9783C9D9FC4C     *EXPLOIT*
+|       EXPLOITPACK:98FE96309F9524B8C84C508837551A19    5.8     https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19       *EXPLOIT*
+|       EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97    5.8     https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97       *EXPLOIT*
+|       1337DAY-ID-32328        5.8     https://vulners.com/zdt/1337DAY-ID-32328        *EXPLOIT*
+|       1337DAY-ID-32009        5.8     https://vulners.com/zdt/1337DAY-ID-32009        *EXPLOIT*
+|       EDB-ID:45939    5.3     https://vulners.com/exploitdb/EDB-ID:45939      *EXPLOIT*
+|       EDB-ID:45233    5.3     https://vulners.com/exploitdb/EDB-ID:45233      *EXPLOIT*
+|       CVE-2018-20685  5.3     https://vulners.com/cve/CVE-2018-20685
+|       CVE-2018-15919  5.3     https://vulners.com/cve/CVE-2018-15919
+|       CVE-2018-15473  5.3     https://vulners.com/cve/CVE-2018-15473
+|       CVE-2017-15906  5.3     https://vulners.com/cve/CVE-2017-15906
+|       CVE-2016-20012  5.3     https://vulners.com/cve/CVE-2016-20012
+|       SSH_ENUM        5.0     https://vulners.com/canvas/SSH_ENUM     *EXPLOIT*
+|       PACKETSTORM:150621      5.0     https://vulners.com/packetstorm/PACKETSTORM:150621      *EXPLOIT*
+|       EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0    5.0     https://vulners.com/exploitpack/EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0       *EXPLOIT*
+|       EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283    5.0     https://vulners.com/exploitpack/EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283       *EXPLOIT*
+|       1337DAY-ID-31730        5.0     https://vulners.com/zdt/1337DAY-ID-31730        *EXPLOIT*
+|       CVE-2025-32728  4.3     https://vulners.com/cve/CVE-2025-32728
+|       CVE-2021-36368  3.7     https://vulners.com/cve/CVE-2021-36368
+|       PACKETSTORM:151227      0.0     https://vulners.com/packetstorm/PACKETSTORM:151227      *EXPLOIT*
+|       PACKETSTORM:140261      0.0     https://vulners.com/packetstorm/PACKETSTORM:140261      *EXPLOIT*
+|_      1337DAY-ID-30937        0.0     https://vulners.com/zdt/1337DAY-ID-30937        *EXPLOIT*
+8000/tcp open  nagios-nsca Nagios NSCA
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       http://ha.ckers.org/slowloris/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+9000/tcp open  http        Golang net/http server
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| fingerprint-strings: 
+|   GenericLines: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Accept-Ranges: bytes
+|     Cache-Control: max-age=31536000
+|     Content-Length: 23032
+|     Content-Type: text/html; charset=utf-8
+|     Last-Modified: Wed, 04 Dec 2019 04:22:15 GMT
+|     X-Content-Type-Options: nosniff
+|     X-Xss-Protection: 1; mode=block
+|     Date: Tue, 20 May 2025 02:41:28 GMT
+|     <!DOCTYPE html><html lang="en" ng-app="portainer">
+|     <head>
+|     <meta charset="utf-8">
+|     <title>Portainer</title>
+|     <meta name="description" content="">
+|     <meta name="author" content="Portainer.io">
+|     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+|     <!--[if lt IE 9]>
+|     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+|     <![endif]-->
+|     <!-- Fav and touch icons -->
+|     <link rel="apple-touch-icon" sizes="180x180" href="dc4d092847be46242d8c013d1bc7c494.png">
+|     <link rel="icon" type="image/png" sizes="32x32" href="5ba13dcb526292ae707310a54e103cd1.png">
+|_    <link rel="icon" type="image/
+| http-aspnet-debug: 
+|_  status: DEBUG is enabled
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.145.143
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.145.143:9000/main.d14bda68403d46ff0e35.js
+|     Form id: parallelism
+|_    Form action: 
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       http://ha.ckers.org/slowloris/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9000-TCP:V=7.95%I=7%D=5/20%Time=682BCFB9%P=x86_64-pc-linux-gnu%r(Ge
+SF:nericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20t
+SF:ext/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x
+SF:20Request")%r(GetRequest,5B16,"HTTP/1\.0\x20200\x20OK\r\nAccept-Ranges:
+SF:\x20bytes\r\nCache-Control:\x20max-age=31536000\r\nContent-Length:\x202
+SF:3032\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nLast-Modified:\
+SF:x20Wed,\x2004\x20Dec\x202019\x2004:22:15\x20GMT\r\nX-Content-Type-Optio
+SF:ns:\x20nosniff\r\nX-Xss-Protection:\x201;\x20mode=block\r\nDate:\x20Tue
+SF:,\x2020\x20May\x202025\x2002:41:28\x20GMT\r\n\r\n<!DOCTYPE\x20html><htm
+SF:l\x20lang=\"en\"\x20ng-app=\"portainer\">\n<head>\n\x20\x20<meta\x20cha
+SF:rset=\"utf-8\">\n\x20\x20<title>Portainer</title>\n\x20\x20<meta\x20nam
+SF:e=\"description\"\x20content=\"\">\n\x20\x20<meta\x20name=\"author\"\x2
+SF:0content=\"Portainer\.io\">\n\n\n\x20\x20<!--\x20HTML5\x20shim,\x20for\
+SF:x20IE6-8\x20support\x20of\x20HTML5\x20elements\x20-->\n\x20\x20<!--\[if
+SF:\x20lt\x20IE\x209\]>\n\x20\x20<script\x20src=\"//html5shim\.googlecode\
+SF:.com/svn/trunk/html5\.js\"></script>\n\x20\x20<!\[endif\]-->\n\n\n\x20\
+SF:x20<!--\x20Fav\x20and\x20touch\x20icons\x20-->\n\x20\x20<link\x20rel=\"
+SF:apple-touch-icon\"\x20sizes=\"180x180\"\x20href=\"dc4d092847be46242d8c0
+SF:13d1bc7c494\.png\">\n\x20\x20<link\x20rel=\"icon\"\x20type=\"image/png\
+SF:"\x20sizes=\"32x32\"\x20href=\"5ba13dcb526292ae707310a54e103cd1\.png\">
+SF:\n\x20\x20<link\x20rel=\"icon\"\x20type=\"image/")%r(HTTPOptions,3406,"
+SF:HTTP/1\.0\x20200\x20OK\r\nAccept-Ranges:\x20bytes\r\nCache-Control:\x20
+SF:max-age=31536000\r\nContent-Length:\x2023032\r\nContent-Type:\x20text/h
+SF:tml;\x20charset=utf-8\r\nLast-Modified:\x20Wed,\x2004\x20Dec\x202019\x2
+SF:004:22:15\x20GMT\r\nX-Content-Type-Options:\x20nosniff\r\nX-Xss-Protect
+SF:ion:\x201;\x20mode=block\r\nDate:\x20Tue,\x2020\x20May\x202025\x2002:41
+SF::28\x20GMT\r\n\r\n<!DOCTYPE\x20html><html\x20lang=\"en\"\x20ng-app=\"po
+SF:rtainer\">\n<head>\n\x20\x20<meta\x20charset=\"utf-8\">\n\x20\x20<title
+SF:>Portainer</title>\n\x20\x20<meta\x20name=\"description\"\x20content=\"
+SF:\">\n\x20\x20<meta\x20name=\"author\"\x20content=\"Portainer\.io\">\n\n
+SF:\n\x20\x20<!--\x20HTML5\x20shim,\x20for\x20IE6-8\x20support\x20of\x20HT
+SF:ML5\x20elements\x20-->\n\x20\x20<!--\[if\x20lt\x20IE\x209\]>\n\x20\x20<
+SF:script\x20src=\"//html5shim\.googlecode\.com/svn/trunk/html5\.js\"></sc
+SF:ript>\n\x20\x20<!\[endif\]-->\n\n\n\x20\x20<!--\x20Fav\x20and\x20touch\
+SF:x20icons\x20-->\n\x20\x20<link\x20rel=\"apple-touch-icon\"\x20sizes=\"1
+SF:80x180\"\x20href=\"dc4d092847be46242d8c013d1bc7c494\.png\">\n\x20\x20<l
+SF:ink\x20rel=\"icon\"\x20type=\"image/png\"\x20sizes=\"32x32\"\x20href=\"
+SF:5ba13dcb526292ae707310a54e103cd1\.png\">\n\x20\x20<link\x20rel=\"icon\"
+SF:\x20type=\"image/");
+MAC Address: 00:0C:29:6A:3C:E5 (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 592.86 seconds
+                                                                                                                   
+┌──(roadmvn㉿kali)-[~]
+└─$ 
+

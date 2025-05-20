@@ -1,0 +1,251 @@
+┌──(roadmvn㉿kali)-[~]
+└─$ nmap -sV --script vuln -p- -oN vuln_140.txt 192.168.145.140
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-05-20 02:40 CEST
+Nmap scan report for 192.168.145.140
+Host is up (0.00073s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT     STATE SERVICE    VERSION
+21/tcp   open  ftp        ProFTPD 1.3.5rc3
+| vulners: 
+|   cpe:/a:proftpd:proftpd:1.3.5rc3: 
+|       SAINT:FD1752E124A72FD3A26EEB9B315E8382  10.0    https://vulners.com/saint/SAINT:FD1752E124A72FD3A26EEB9B315E8382   *EXPLOIT*
+|       SAINT:950EB68D408A40399926A4CCAD3CC62E  10.0    https://vulners.com/saint/SAINT:950EB68D408A40399926A4CCAD3CC62E   *EXPLOIT*
+|       SAINT:63FB77B9136D48259E4F0D4CDA35E957  10.0    https://vulners.com/saint/SAINT:63FB77B9136D48259E4F0D4CDA35E957   *EXPLOIT*
+|       SAINT:1B08F4664C428B180EEC9617B41D9A2C  10.0    https://vulners.com/saint/SAINT:1B08F4664C428B180EEC9617B41D9A2C   *EXPLOIT*
+|       PROFTPD_MOD_COPY        10.0    https://vulners.com/canvas/PROFTPD_MOD_COPY     *EXPLOIT*
+|       PACKETSTORM:162777      10.0    https://vulners.com/packetstorm/PACKETSTORM:162777      *EXPLOIT*
+|       PACKETSTORM:132218      10.0    https://vulners.com/packetstorm/PACKETSTORM:132218      *EXPLOIT*
+|       PACKETSTORM:131567      10.0    https://vulners.com/packetstorm/PACKETSTORM:131567      *EXPLOIT*
+|       PACKETSTORM:131555      10.0    https://vulners.com/packetstorm/PACKETSTORM:131555      *EXPLOIT*
+|       PACKETSTORM:131505      10.0    https://vulners.com/packetstorm/PACKETSTORM:131505      *EXPLOIT*
+|       MSF:EXPLOIT-UNIX-FTP-PROFTPD_MODCOPY_EXEC-      10.0    https://vulners.com/metasploit/MSF:EXPLOIT-UNIX-FTP-PROFTPD_MODCOPY_EXEC-  *EXPLOIT*
+|       EDB-ID:49908    10.0    https://vulners.com/exploitdb/EDB-ID:49908      *EXPLOIT*
+|       EDB-ID:37262    10.0    https://vulners.com/exploitdb/EDB-ID:37262      *EXPLOIT*
+|       CVE-2015-3306   10.0    https://vulners.com/cve/CVE-2015-3306
+|       1337DAY-ID-36298        10.0    https://vulners.com/zdt/1337DAY-ID-36298        *EXPLOIT*
+|       1337DAY-ID-23720        10.0    https://vulners.com/zdt/1337DAY-ID-23720        *EXPLOIT*
+|       1337DAY-ID-23544        10.0    https://vulners.com/zdt/1337DAY-ID-23544        *EXPLOIT*
+|       CVE-2024-48651  7.5     https://vulners.com/cve/CVE-2024-48651
+|       CVE-2023-51713  7.5     https://vulners.com/cve/CVE-2023-51713
+|       CVE-2021-46854  7.5     https://vulners.com/cve/CVE-2021-46854
+|       CVE-2020-9272   7.5     https://vulners.com/cve/CVE-2020-9272
+|       CVE-2019-19272  7.5     https://vulners.com/cve/CVE-2019-19272
+|       CVE-2019-19271  7.5     https://vulners.com/cve/CVE-2019-19271
+|       CVE-2019-19270  7.5     https://vulners.com/cve/CVE-2019-19270
+|       CVE-2019-18217  7.5     https://vulners.com/cve/CVE-2019-18217
+|       CVE-2016-3125   7.5     https://vulners.com/cve/CVE-2016-3125
+|       CVE-2023-48795  5.9     https://vulners.com/cve/CVE-2023-48795
+|       54E1BB01-2C69-5AFD-A23D-9783C9D9FC4C    5.9     https://vulners.com/githubexploit/54E1BB01-2C69-5AFD-A23D-9783C9D9FC4C     *EXPLOIT*
+|       CVE-2017-7418   5.5     https://vulners.com/cve/CVE-2017-7418
+|       SSV:61050       5.0     https://vulners.com/seebug/SSV:61050    *EXPLOIT*
+|_      CVE-2013-4359   5.0     https://vulners.com/cve/CVE-2013-4359
+22/tcp   open  ssh        OpenSSH 7.4 (protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.4: 
+|       CVE-2023-38408  9.8     https://vulners.com/cve/CVE-2023-38408
+|       B8190CDB-3EB9-5631-9828-8064A1575B23    9.8     https://vulners.com/githubexploit/B8190CDB-3EB9-5631-9828-8064A1575B23     *EXPLOIT*
+|       8FC9C5AB-3968-5F3C-825E-E8DB5379A623    9.8     https://vulners.com/githubexploit/8FC9C5AB-3968-5F3C-825E-E8DB5379A623     *EXPLOIT*
+|       8AD01159-548E-546E-AA87-2DE89F3927EC    9.8     https://vulners.com/githubexploit/8AD01159-548E-546E-AA87-2DE89F3927EC     *EXPLOIT*
+|       5E6968B4-DBD6-57FA-BF6E-D9B2219DB27A    9.8     https://vulners.com/githubexploit/5E6968B4-DBD6-57FA-BF6E-D9B2219DB27A     *EXPLOIT*
+|       2227729D-6700-5C8F-8930-1EEAFD4B9FF0    9.8     https://vulners.com/githubexploit/2227729D-6700-5C8F-8930-1EEAFD4B9FF0     *EXPLOIT*
+|       0221525F-07F5-5790-912D-F4B9E2D1B587    9.8     https://vulners.com/githubexploit/0221525F-07F5-5790-912D-F4B9E2D1B587     *EXPLOIT*
+|       CVE-2020-15778  7.8     https://vulners.com/cve/CVE-2020-15778
+|       SSV:92579       7.5     https://vulners.com/seebug/SSV:92579    *EXPLOIT*
+|       PACKETSTORM:173661      7.5     https://vulners.com/packetstorm/PACKETSTORM:173661      *EXPLOIT*
+|       F0979183-AE88-53B4-86CF-3AF0523F3807    7.5     https://vulners.com/githubexploit/F0979183-AE88-53B4-86CF-3AF0523F3807     *EXPLOIT*
+|       1337DAY-ID-26576        7.5     https://vulners.com/zdt/1337DAY-ID-26576        *EXPLOIT*
+|       CVE-2021-41617  7.0     https://vulners.com/cve/CVE-2021-41617
+|       95499236-C9FE-56A6-9D7D-E943A24B633A    6.9     https://vulners.com/githubexploit/95499236-C9FE-56A6-9D7D-E943A24B633A     *EXPLOIT*
+|       2C119FFA-ECE0-5E14-A4A4-354A2C38071A    6.9     https://vulners.com/githubexploit/2C119FFA-ECE0-5E14-A4A4-354A2C38071A     *EXPLOIT*
+|       PACKETSTORM:189283      6.8     https://vulners.com/packetstorm/PACKETSTORM:189283      *EXPLOIT*
+|       F79E574D-30C8-5C52-A801-66FFA0610BAA    6.8     https://vulners.com/githubexploit/F79E574D-30C8-5C52-A801-66FFA0610BAA     *EXPLOIT*
+|       EDB-ID:46516    6.8     https://vulners.com/exploitdb/EDB-ID:46516      *EXPLOIT*
+|       EDB-ID:46193    6.8     https://vulners.com/exploitdb/EDB-ID:46193      *EXPLOIT*
+|       CVE-2025-26465  6.8     https://vulners.com/cve/CVE-2025-26465
+|       CVE-2019-6110   6.8     https://vulners.com/cve/CVE-2019-6110
+|       CVE-2019-6109   6.8     https://vulners.com/cve/CVE-2019-6109
+|       C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3    6.8     https://vulners.com/githubexploit/C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3     *EXPLOIT*
+|       1337DAY-ID-39918        6.8     https://vulners.com/zdt/1337DAY-ID-39918        *EXPLOIT*
+|       10213DBE-F683-58BB-B6D3-353173626207    6.8     https://vulners.com/githubexploit/10213DBE-F683-58BB-B6D3-353173626207     *EXPLOIT*
+|       CVE-2023-51385  6.5     https://vulners.com/cve/CVE-2023-51385
+|       PACKETSTORM:181223      5.9     https://vulners.com/packetstorm/PACKETSTORM:181223      *EXPLOIT*
+|       MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-        5.9     https://vulners.com/metasploit/MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-    *EXPLOIT*
+|       CVE-2023-48795  5.9     https://vulners.com/cve/CVE-2023-48795
+|       CVE-2020-14145  5.9     https://vulners.com/cve/CVE-2020-14145
+|       CVE-2019-6111   5.9     https://vulners.com/cve/CVE-2019-6111
+|       54E1BB01-2C69-5AFD-A23D-9783C9D9FC4C    5.9     https://vulners.com/githubexploit/54E1BB01-2C69-5AFD-A23D-9783C9D9FC4C     *EXPLOIT*
+|       EXPLOITPACK:98FE96309F9524B8C84C508837551A19    5.8     https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19       *EXPLOIT*
+|       EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97    5.8     https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97       *EXPLOIT*
+|       1337DAY-ID-32328        5.8     https://vulners.com/zdt/1337DAY-ID-32328        *EXPLOIT*
+|       1337DAY-ID-32009        5.8     https://vulners.com/zdt/1337DAY-ID-32009        *EXPLOIT*
+|       EDB-ID:45939    5.3     https://vulners.com/exploitdb/EDB-ID:45939      *EXPLOIT*
+|       EDB-ID:45233    5.3     https://vulners.com/exploitdb/EDB-ID:45233      *EXPLOIT*
+|       CVE-2018-20685  5.3     https://vulners.com/cve/CVE-2018-20685
+|       CVE-2018-15919  5.3     https://vulners.com/cve/CVE-2018-15919
+|       CVE-2018-15473  5.3     https://vulners.com/cve/CVE-2018-15473
+|       CVE-2017-15906  5.3     https://vulners.com/cve/CVE-2017-15906
+|       CVE-2016-20012  5.3     https://vulners.com/cve/CVE-2016-20012
+|       SSH_ENUM        5.0     https://vulners.com/canvas/SSH_ENUM     *EXPLOIT*
+|       PACKETSTORM:150621      5.0     https://vulners.com/packetstorm/PACKETSTORM:150621      *EXPLOIT*
+|       EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0    5.0     https://vulners.com/exploitpack/EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0       *EXPLOIT*
+|       EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283    5.0     https://vulners.com/exploitpack/EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283       *EXPLOIT*
+|       1337DAY-ID-31730        5.0     https://vulners.com/zdt/1337DAY-ID-31730        *EXPLOIT*
+|       CVE-2025-32728  4.3     https://vulners.com/cve/CVE-2025-32728
+|       CVE-2021-36368  3.7     https://vulners.com/cve/CVE-2021-36368
+|       PACKETSTORM:151227      0.0     https://vulners.com/packetstorm/PACKETSTORM:151227      *EXPLOIT*
+|       PACKETSTORM:140261      0.0     https://vulners.com/packetstorm/PACKETSTORM:140261      *EXPLOIT*
+|_      1337DAY-ID-30937        0.0     https://vulners.com/zdt/1337DAY-ID-30937        *EXPLOIT*
+80/tcp   open  http       nginx 1.16.1
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| vulners: 
+|   nginx 1.16.1: 
+|       3F71F065-66D4-541F-A813-9F1A2F2B1D91    8.8     https://vulners.com/githubexploit/3F71F065-66D4-541F-A813-9F1A2F2B1D91     *EXPLOIT*
+|       NGINX:CVE-2022-41741    7.8     https://vulners.com/nginx/NGINX:CVE-2022-41741
+|       DF1BBDC4-B715-5ABE-985E-91DD3BB87773    7.8     https://vulners.com/githubexploit/DF1BBDC4-B715-5ABE-985E-91DD3BB87773     *EXPLOIT*
+|       DF041B2B-2DA7-5262-AABE-9EBD2D535041    7.8     https://vulners.com/githubexploit/DF041B2B-2DA7-5262-AABE-9EBD2D535041     *EXPLOIT*
+|       CVE-2022-41741  7.8     https://vulners.com/cve/CVE-2022-41741
+|       8A98070F-5CA5-5FC8-A5A7-593813F1D57E    7.8     https://vulners.com/githubexploit/8A98070F-5CA5-5FC8-A5A7-593813F1D57E     *EXPLOIT*
+|       NGINX:CVE-2021-23017    7.7     https://vulners.com/nginx/NGINX:CVE-2021-23017
+|       EDB-ID:50973    7.7     https://vulners.com/exploitdb/EDB-ID:50973      *EXPLOIT*
+|       CVE-2021-23017  7.7     https://vulners.com/cve/CVE-2021-23017
+|       B175E582-6BBF-5D54-AF15-ED3715F757E3    7.7     https://vulners.com/githubexploit/B175E582-6BBF-5D54-AF15-ED3715F757E3     *EXPLOIT*
+|       9A14990B-D52A-56B6-966C-6F35C8B8EB9D    7.7     https://vulners.com/githubexploit/9A14990B-D52A-56B6-966C-6F35C8B8EB9D     *EXPLOIT*
+|       25F34A51-EB79-5BBC-8262-6F1876067F04    7.7     https://vulners.com/githubexploit/25F34A51-EB79-5BBC-8262-6F1876067F04     *EXPLOIT*
+|       245ACDDD-B1E2-5344-B37D-5B9A0B0A1F0D    7.7     https://vulners.com/githubexploit/245ACDDD-B1E2-5344-B37D-5B9A0B0A1F0D     *EXPLOIT*
+|       1337DAY-ID-37837        7.7     https://vulners.com/zdt/1337DAY-ID-37837        *EXPLOIT*
+|       1337DAY-ID-36300        7.7     https://vulners.com/zdt/1337DAY-ID-36300        *EXPLOIT*
+|       00455CDF-B814-5424-952E-9088FBB2D42D    7.7     https://vulners.com/githubexploit/00455CDF-B814-5424-952E-9088FBB2D42D     *EXPLOIT*
+|       NGINX:CVE-2019-9513     7.5     https://vulners.com/nginx/NGINX:CVE-2019-9513
+|       NGINX:CVE-2019-9511     7.5     https://vulners.com/nginx/NGINX:CVE-2019-9511
+|       F7F6E599-CEF4-5E03-8E10-FE18C4101E38    7.5     https://vulners.com/githubexploit/F7F6E599-CEF4-5E03-8E10-FE18C4101E38     *EXPLOIT*
+|       E73E445F-0A0D-5966-8A21-C74FE9C0D2BC    7.5     https://vulners.com/githubexploit/E73E445F-0A0D-5966-8A21-C74FE9C0D2BC     *EXPLOIT*
+|       E5C174E5-D6E8-56E0-8403-D287DE52EB3F    7.5     https://vulners.com/githubexploit/E5C174E5-D6E8-56E0-8403-D287DE52EB3F     *EXPLOIT*
+|       DB6E1BBD-08B1-574D-A351-7D6BB9898A4A    7.5     https://vulners.com/githubexploit/DB6E1BBD-08B1-574D-A351-7D6BB9898A4A     *EXPLOIT*
+|       CVE-2023-44487  7.5     https://vulners.com/cve/CVE-2023-44487
+|       C9A1C0C1-B6E3-5955-A4F1-DEA0E505B14B    7.5     https://vulners.com/githubexploit/C9A1C0C1-B6E3-5955-A4F1-DEA0E505B14B     *EXPLOIT*
+|       BD3652A9-D066-57BA-9943-4E34970463B9    7.5     https://vulners.com/githubexploit/BD3652A9-D066-57BA-9943-4E34970463B9     *EXPLOIT*
+|       B0B1EF25-DE18-534A-AE5B-E6E87669C1D2    7.5     https://vulners.com/githubexploit/B0B1EF25-DE18-534A-AE5B-E6E87669C1D2     *EXPLOIT*
+|       B0208442-6E17-5772-B12D-B5BE30FA5540    7.5     https://vulners.com/githubexploit/B0208442-6E17-5772-B12D-B5BE30FA5540     *EXPLOIT*
+|       A820A056-9F91-5059-B0BC-8D92C7A31A52    7.5     https://vulners.com/githubexploit/A820A056-9F91-5059-B0BC-8D92C7A31A52     *EXPLOIT*
+|       A66531EB-3C47-5C56-B8A6-E04B54E9D656    7.5     https://vulners.com/githubexploit/A66531EB-3C47-5C56-B8A6-E04B54E9D656     *EXPLOIT*
+|       9814661A-35A4-5DB7-BB25-A1040F365C81    7.5     https://vulners.com/githubexploit/9814661A-35A4-5DB7-BB25-A1040F365C81     *EXPLOIT*
+|       788E0E7C-6F5C-5DAD-9E3A-EE6D8A685F7D    7.5     https://vulners.com/githubexploit/788E0E7C-6F5C-5DAD-9E3A-EE6D8A685F7D     *EXPLOIT*
+|       5A864BCC-B490-5532-83AB-2E4109BB3C31    7.5     https://vulners.com/githubexploit/5A864BCC-B490-5532-83AB-2E4109BB3C31     *EXPLOIT*
+|       40879618-C556-547C-8769-9E63E83D0B55    7.5     https://vulners.com/githubexploit/40879618-C556-547C-8769-9E63E83D0B55     *EXPLOIT*
+|       1F6E0709-DA03-564E-925F-3177657C053E    7.5     https://vulners.com/githubexploit/1F6E0709-DA03-564E-925F-3177657C053E     *EXPLOIT*
+|       17C6AD2A-8469-56C8-BBBE-1764D0DF1680    7.5     https://vulners.com/githubexploit/17C6AD2A-8469-56C8-BBBE-1764D0DF1680     *EXPLOIT*
+|       CVE-2021-3618   7.4     https://vulners.com/cve/CVE-2021-3618
+|       NGINX:CVE-2022-41742    7.1     https://vulners.com/nginx/NGINX:CVE-2022-41742
+|       CVE-2022-41742  7.1     https://vulners.com/cve/CVE-2022-41742
+|       95499236-C9FE-56A6-9D7D-E943A24B633A    6.9     https://vulners.com/githubexploit/95499236-C9FE-56A6-9D7D-E943A24B633A     *EXPLOIT*
+|       2C119FFA-ECE0-5E14-A4A4-354A2C38071A    6.9     https://vulners.com/githubexploit/2C119FFA-ECE0-5E14-A4A4-354A2C38071A     *EXPLOIT*
+|       PACKETSTORM:167720      6.8     https://vulners.com/packetstorm/PACKETSTORM:167720      *EXPLOIT*
+|       NGINX:CVE-2019-9516     6.5     https://vulners.com/nginx/NGINX:CVE-2019-9516
+|       NGINX:CVE-2024-7347     5.7     https://vulners.com/nginx/NGINX:CVE-2024-7347
+|       NGINX:CVE-2025-23419    5.3     https://vulners.com/nginx/NGINX:CVE-2025-23419
+|       CVE-2019-20372  5.3     https://vulners.com/cve/CVE-2019-20372
+|_      PACKETSTORM:162830      0.0     https://vulners.com/packetstorm/PACKETSTORM:162830      *EXPLOIT*
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+| http-enum: 
+|_  /robots.txt: Robots file
+|_http-server-header: nginx/1.16.1
+8080/tcp open  http-proxy
+|_http-majordomo2-dir-traversal: ERROR: Script execution failed (use -d to debug)
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       http://ha.ckers.org/slowloris/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 200 OK
+|     Content-Length: 2311
+|     Content-Disposition: inline; filename="index.html"
+|     Accept-Ranges: bytes
+|     ETag: "9e2b438dc8bf2935ef5fbdb0014df10c82fdccf8"
+|     Content-Type: text/html; charset=utf-8
+|     Vary: Accept-Encoding
+|     Date: Tue, 20 May 2025 02:40:32 GMT
+|     Connection: close
+|_    <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><link href="/static/css/2.51016fdb.chunk.css" rel="stylesheet"><link href="/static/css/main.f220ad61.chunk.css" rel="stylesheet"></head><body id="page-top"><noscript>You need to enable JavaScript to run this app.<
+| http-vuln-cve2011-3192: 
+|   VULNERABLE:
+|   Apache byterange filter DoS
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2011-3192  BID:49303
+|       The Apache web server is vulnerable to a denial of service attack when numerous
+|       overlapping byte ranges are requested.
+|     Disclosure date: 2011-08-19
+|     References:
+|       https://www.tenable.com/plugins/nessus/55976
+|       https://www.securityfocus.com/bid/49303
+|       https://seclists.org/fulldisclosure/2011/Aug/175
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: UNKNOWN (unable to test)
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd :
+|   <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><link href="/static/css/2.51016fdb.chunk.css" rel="stylesheet"><link href="/static/css/main.f220ad61.chunk.css" rel="stylesheet"></head><body id="page-top"><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,"a",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p="/";var t=this["webpackJsonpreact-template"]=this["webpackJsonpreact-template"]||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src="/static/js/2.a7fee063.chunk.js"></script><script src="/static/js/main.5a348464.chunk.js"></script></body></html>
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8080-TCP:V=7.95%I=7%D=5/20%Time=682BCF82%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,A23,"HTTP/1\.1\x20200\x20OK\r\nContent-Length:\x202311\r\nCont
+SF:ent-Disposition:\x20inline;\x20filename=\"index\.html\"\r\nAccept-Range
+SF:s:\x20bytes\r\nETag:\x20\"9e2b438dc8bf2935ef5fbdb0014df10c82fdccf8\"\r\
+SF:nContent-Type:\x20text/html;\x20charset=utf-8\r\nVary:\x20Accept-Encodi
+SF:ng\r\nDate:\x20Tue,\x2020\x20May\x202025\x2002:40:32\x20GMT\r\nConnecti
+SF:on:\x20close\r\n\r\n<!doctype\x20html><html\x20lang=\"en\"><head><meta\
+SF:x20charset=\"utf-8\"/><link\x20rel=\"icon\"\x20href=\"/favicon\.ico\"/>
+SF:<meta\x20name=\"viewport\"\x20content=\"width=device-width,initial-scal
+SF:e=1\"/><meta\x20name=\"theme-color\"\x20content=\"#000000\"/><meta\x20n
+SF:ame=\"description\"\x20content=\"Web\x20site\x20created\x20using\x20cre
+SF:ate-react-app\"/><link\x20rel=\"apple-touch-icon\"\x20href=\"logo192\.p
+SF:ng\"/><link\x20rel=\"manifest\"\x20href=\"/manifest\.json\"/><title>Rea
+SF:ct\x20App</title><link\x20href=\"/static/css/2\.51016fdb\.chunk\.css\"\
+SF:x20rel=\"stylesheet\"><link\x20href=\"/static/css/main\.f220ad61\.chunk
+SF:\.css\"\x20rel=\"stylesheet\"></head><body\x20id=\"page-top\"><noscript
+SF:>You\x20need\x20to\x20enable\x20JavaScript\x20to\x20run\x20this\x20app\
+SF:.<")%r(HTTPOptions,A23,"HTTP/1\.1\x20200\x20OK\r\nContent-Length:\x2023
+SF:11\r\nContent-Disposition:\x20inline;\x20filename=\"index\.html\"\r\nAc
+SF:cept-Ranges:\x20bytes\r\nETag:\x20\"9e2b438dc8bf2935ef5fbdb0014df10c82f
+SF:dccf8\"\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nVary:\x20Acc
+SF:ept-Encoding\r\nDate:\x20Tue,\x2020\x20May\x202025\x2002:40:32\x20GMT\r
+SF:\nConnection:\x20close\r\n\r\n<!doctype\x20html><html\x20lang=\"en\"><h
+SF:ead><meta\x20charset=\"utf-8\"/><link\x20rel=\"icon\"\x20href=\"/favico
+SF:n\.ico\"/><meta\x20name=\"viewport\"\x20content=\"width=device-width,in
+SF:itial-scale=1\"/><meta\x20name=\"theme-color\"\x20content=\"#000000\"/>
+SF:<meta\x20name=\"description\"\x20content=\"Web\x20site\x20created\x20us
+SF:ing\x20create-react-app\"/><link\x20rel=\"apple-touch-icon\"\x20href=\"
+SF:logo192\.png\"/><link\x20rel=\"manifest\"\x20href=\"/manifest\.json\"/>
+SF:<title>React\x20App</title><link\x20href=\"/static/css/2\.51016fdb\.chu
+SF:nk\.css\"\x20rel=\"stylesheet\"><link\x20href=\"/static/css/main\.f220a
+SF:d61\.chunk\.css\"\x20rel=\"stylesheet\"></head><body\x20id=\"page-top\"
+SF:><noscript>You\x20need\x20to\x20enable\x20JavaScript\x20to\x20run\x20th
+SF:is\x20app\.<");
+MAC Address: 00:0C:29:41:A8:04 (VMware)
+Service Info: OS: Unix
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 549.22 seconds
+                                                                                                                   
+┌──(roadmvn㉿kali)-[~]
+└─$ 
