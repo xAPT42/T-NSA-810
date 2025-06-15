@@ -1,0 +1,40 @@
+---
+- name: Générer des rapports de sécurité
+  hosts: all
+  become: true
+  
+  tasks:
+    - name: Installer les outils de diagnostic
+      apt:
+        name:
+          - lynis
+          - rkhunter
+        state: present
+      when: ansible_os_family == "Debian"
+      
+    - name: Exécuter Lynis
+      command: lynis audit system
+      register: lynis_output
+      changed_when: false
+      
+    - name: Exécuter RKHunter
+      command: rkhunter --check --skip-keypress
+      register: rkhunter_output
+      changed_when: false
+      
+    - name: Créer le répertoire des rapports
+      file:
+        path: /tmp/security_reports
+        state: directory
+        mode: '0755'
+        
+    - name: Générer le rapport
+      template:
+        src: templates/report.j2
+        dest: "/tmp/security_reports/{{ inventory_hostname }}_report.txt"
+        
+    - name: Récupérer les rapports
+      fetch:
+        src: "/tmp/security_reports/{{ inventory_hostname }}_report.txt"
+        dest: "../../rapports/{{ inventory_hostname }}_report.txt"
+        flat: yes 

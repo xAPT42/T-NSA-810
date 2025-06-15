@@ -1,0 +1,21 @@
+---
+all:
+  children:
+    web:
+      hosts:
+        vm_web:
+          ansible_host: 192.168.1.10
+    db:
+      hosts:
+        vm_db:
+          ansible_host: 192.168.1.11
+    ssh:
+      hosts:
+        vm_ssh:
+          ansible_host: 192.168.1.12
+    portainer:
+      hosts:
+        vm_portainer:
+          ansible_host: 192.168.1.13
+  vars:
+    ansible_user: admin 

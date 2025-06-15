@@ -1,0 +1,37 @@
+---
+- name: Corriger les vulnérabilités
+  hosts: all
+  become: true
+  
+  tasks:
+    - name: Mettre à jour tous les packages
+      apt:
+        update_cache: yes
+        upgrade: dist
+      when: ansible_os_family == "Debian"
+      
+    - name: Vérifier et corriger les permissions de fichiers sensibles
+      file:
+        path: "{{ item }}"
+        mode: '0600'
+        owner: root
+        group: root
+      loop:
+        - /etc/shadow
+        - /etc/passwd
+        - /etc/ssh/sshd_config
+        
+    - name: Configurer le pare-feu
+      ufw:
+        rule: allow
+        port: "{{ item }}"
+        proto: tcp
+      loop:
+        - '22'
+        - '80'
+        - '443'
+      
+    - name: Activer le pare-feu
+      ufw:
+        state: enabled
+        policy: deny 
